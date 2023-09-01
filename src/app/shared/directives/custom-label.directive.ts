@@ -1,5 +1,4 @@
 import {Directive, ElementRef, OnInit} from '@angular/core';
-import HTMLElement from "$GLOBAL$";
 
 @Directive({
   selector: '[customLabel]'
