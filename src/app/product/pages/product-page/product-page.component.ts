@@ -9,7 +9,7 @@ import {FormBuilder, FormGroup, Validators} from "@angular/forms";
 export class ProductPageComponent {
   private fb = inject(FormBuilder)
 
-  color:string = 'green'
+  color:string = ''
 
   myForm:FormGroup = this.fb.group({
     name:['',[Validators.required, Validators.minLength(6),Validators.email]]

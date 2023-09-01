@@ -4,7 +4,13 @@
 <form [formGroup]="myForm" >
   <div class="row g-3 align-items-center mb-3">
     <div class="col-auto">
-      <label customLabel >Nombre</label>
+      <label
+        customLabel
+        [color]="color"
+        [errors]="myForm.get('name')?.errors"
+      >
+        Nombre
+      </label>
     </div>
     <div class="col-auto">
       <input
